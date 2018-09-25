@@ -71,43 +71,43 @@ h1, h2, h3, h4, h5 {
 	flex-wrap: wrap;
 	flex-direction: row;
 	margin: 0 auto;
-	border: 1px solid red;
 	width: 1000px;
 }
 
 /* Header tags */
 header{
-display: flex;
+	display: flex;
     flex-wrap: nowrap;
     position: fixed;
     width: 1000px;
     height: 100px; 
     align-items: center;
-
+    justify-content: space-between;
 }
  nav{
 	display: flex;
     position: static;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 700px;
-    height: 10px;
+    height: 20px;
     flex-wrap: nowrap;
     align-items: center;
 }
 
  nav a{
 font-size: 12px;
+padding: 20px 20px 20px 0;
 color: gray;
 position: relative;
 bottom: 15px;
 text-decoration: none;
-
 }
 
- img.logo{
+ .logo{
     position: static;
-    margin: auto;
-    margin-bottom: 50px;
+    /*margin: auto;*/
+    margin-bottom: 40px;
+    align-items: flex-end;
 }
 
 
@@ -149,7 +149,7 @@ h1 {
 }
 
 .codeSnippet{
-display: inline-block; */
+display: inline-block;
     margin-left: 75px;
     /* margin: 50px; */
     width: 390px;
@@ -246,4 +246,85 @@ footer{
     width: 200px;
     height: 100px;
     margin: auto;
+}
+
+/*SERVICES.HTML EXCLUSIVE ELEMENTS */
+
+
+h2 {
+	font-size: 40px;
+	/*text-align: center;*/
+}
+
+
+.firstSection2{
+	    flex-wrap: wrap;
+	        width: 1000px;
+    height: 500px;
+    display: flex;
+    /* margin: 75px 25px 50px 25px; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+.services-header{
+	width: 1000px;
+	height: 125px;
+
+}
+.services-header-img {
+	width: 1000px;
+}
+
+.services{
+	font-size: 18px;
+}
+
+
+.mainBody2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 50px 0 0 0;
+    z-index: -1;
+}
+
+.child3{
+    justify-content: space-evenly;
+    width: 475px;
+    height: 220px;
+    border: 3px solid black;
+    background: lavender;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: lavender;
+}
+
+button {
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 40px;
+    border: solid 2px black;
+    border-bottom: solid 2px lightgrey;
+    background: white;
+    margin: 17px 0;
+}
+
+.footer2{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1000px;
+     height: 300px;
+}
+
+.things{
+	flex-direction: column;
+	flex-wrap: wrap;
 }
