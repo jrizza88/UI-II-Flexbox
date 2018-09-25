@@ -65,17 +65,19 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-* {
-	/* margin: 0 auto; */
-} 
 
 .container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	margin: 0 auto;
+	border: 5px solid red;
 	width: 1000px;
 }
 
 /* Header tags */
 header{
+	display: flex;
 	position: fixed;
     /* width: 875px; */
 	padding: 20px;
@@ -98,14 +100,16 @@ text-decoration: none;
 }
 
 header img.logo{
-	display: inline-block;
+	/* display: inline-block; */
+	/* display: flex; */
 	position: static;
 }
 
 
 .firstSection{
+flex-wrap: nowrap;
 width: 100%;
-display: inline-block;
+display: flex;
 margin: 75px 25px 50px 25px;
 z-index: -1;
 }
@@ -126,7 +130,7 @@ h1 {
 }
 .innovation{
 	z-index: -1;
-	display: inline-block;
+	/* display: inline-block; */
 	position: relative;
     bottom: 50px;
     margin: 50px;
@@ -134,7 +138,7 @@ h1 {
 }
 
 .codeSnippet{
-	display: inline-block;
+	/* display: inline-block; */
     margin-left: 75px;
     /* margin: 50px; */
     width: 390px;
@@ -146,26 +150,35 @@ h1 {
 }
 
 .mainBody{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 10px 0;
 	z-index: -1;
 }
 
+.upperMain {
+	display: flex;
+	justify-content: space-evenly;
+	/* align-items: center; */
+	flex-wrap: nowrap;
+}
+
 .features {
-	margin: 25px 0 40px 0;
-	display: inline-block;
+	margin: 25px 60px 40px 0;
+	/* display: flex; */
 	box-sizing: border-box;
-	width: 490px;
+	width: 400px;
     /* height: 125px; */
 }
 
 .about {
 	margin: 25px 0 40px 0;
-	padding-left: 25px;
-	display: inline-block;
 	box-sizing: border-box;
-	width: 500px;
+	width: 400px;
 	/* height: 125px; */
 }
 
@@ -173,9 +186,15 @@ h1 {
 	width: 100%;
 }
 
+.lowerMain {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
 .services  {
 	margin: 40px 0 10px 0;
-	display: inline-block;
+	/* display: inline-block; */
 	box-sizing: border-box;
 	width: 325px;
 	height: 125px;
@@ -184,22 +203,25 @@ h1 {
 
 .product {
 	margin: 40px 0 10px 0;
-	display: inline-block;
+	/* display: inline-block; */
 	box-sizing: border-box;
 	width: 325px;
 	height: 125px;
-	padding-right: 25px;
+	/* padding-right: 25px; */
 }
 
 .vision {
 	margin: 40px 0 10px 0;
-	display: inline-block;
+	/* display: inline-block; */
 	box-sizing: border-box;
 	width: 325px;
 	height: 125px;
 }
 
 footer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	margin-top: 40px;
 	top: 50%;
 	float: none;
@@ -207,5 +229,9 @@ footer{
 
 
 .copyright {
-	text-align: center;
-	margin: 40px 0;
+	/* display: flex; */
+	margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+
+}
