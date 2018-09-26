@@ -96,12 +96,12 @@ header{
 }
 
  nav a{
-font-size: 12px;
-padding: 20px 20px 20px 0;
-color: gray;
-position: relative;
-bottom: 15px;
-text-decoration: none;
+    font-size: 12px;
+    padding: 20px 20px 20px 0;
+    color: gray;
+    position: relative;
+    bottom: 15px;
+    text-decoration: none;
 }
 
  .logo{
@@ -378,6 +378,7 @@ li {
 
     .firstSection{
         width: 600px;
+        height: 350px;
         justify-content: center;
     }
 
@@ -387,7 +388,7 @@ li {
     
     .innovation, .codeSnippet{
         width: 300px;
-        height: 215px;
+        height: 180px;
         margin: auto 0;
     }
     
@@ -405,6 +406,7 @@ li {
     .mainBody{
         flex-direction: row;
         width: 600px;
+        height: 800px;
     }
 
     .upperMain, .lowerMain{
@@ -412,12 +414,20 @@ li {
         flex-direction: column;
     }
 
-    .child1 {
-        width: 400px;
+    .upperMain{
+        height: 200px;
+    }
 
+    .lowerMain{
+        height: 300px;
+    }
+
+    .child1 {
+        width: 300px;
     }
     
     .middle-img {
         width: 600px;
     }
+
 }
