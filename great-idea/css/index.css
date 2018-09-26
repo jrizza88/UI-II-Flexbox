@@ -345,3 +345,60 @@ ul {
 li {
     padding: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lavender;
+    }
+    .container{
+        width: 600px;
+    }
+
+    header{
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: center;
+        /* height: 50px; */
+    }
+
+    nav{
+        flex-wrap: wrap;
+        width: 360px;
+    }
+
+    nav a{
+        padding: 10px;
+    }
+    
+    .logo{
+        flex-wrap: wrap;
+        height: 30px;
+        position: static;
+    }
+
+    .firstSection{
+        width: 600px;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    
+    .innovation, .codeSnippet{
+        width: 300px;
+        height: 215px;
+        margin: auto 0;
+    }
+    
+    .codeSnippet img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .getStarted{
+        height: 30px;
+        width: 100px;
+        margin-left: 33%;
+    }
+}
