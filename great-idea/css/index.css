@@ -401,4 +401,23 @@ li {
         width: 100px;
         margin-left: 33%;
     }
+
+    .mainBody{
+        flex-direction: row;
+        width: 600px;
+    }
+
+    .upperMain, .lowerMain{
+        width: 600px;
+        flex-direction: column;
+    }
+
+    .child1 {
+        width: 400px;
+
+    }
+    
+    .middle-img {
+        width: 600px;
+    }
 }
