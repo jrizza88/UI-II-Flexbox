@@ -80,7 +80,7 @@ header{
     flex-wrap: nowrap;
     position: fixed;
     width: 1000px;
-    height: 100px; 
+    height: 75px; 
     align-items: center;
     justify-content: space-between;
     background: white;
